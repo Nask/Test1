@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: black;
+}
+
+.fly{
+	list-style: none;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.fly li{
+	display: inline-block;
+	font-size: 4em;
+	margin-right: 50px;
+	font-family: Open Sans, Arial;
+	font-weight: 300px;
+	opacity: 1;
+	transition: all 2.5s ease;
+}
+
+.fly li:last-child {
+	margin-right: 0px;
+}
+
+.fly.hidden li {
+	/*opacity: 0;*/
+
+}
+
+.fly.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly.hidden li:nth-child(2) { transform: translateX(100px) translateY(10px); }
+.fly.hidden li:nth-child(3) { transform: translateX(-100px) translateY(-110px); }
+.fly.hidden li:nth-child(4) { transform: translateX(40px) translateY(50px); }
+.fly.hidden li:nth-child(5) { transform: translateX(-150px) translateY(-200px); }
+.fly.hidden li:nth-child(6) { transform: translateX(-200px) translateY(300px); }
+.fly.hidden li:nth-child(7) { transform: translateX(-45px) translateY(-90px); }

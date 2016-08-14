@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="main.css">
+	<meta charset="UTF-8">
+	<title>Animation ytext</title>
+</head>
+<body>
+	<ul class="fly hidden">
+		<li>W</li>
+		<li>E</li>
+		<li>L</li>
+		<li>C</li>
+		<li>O</li>
+		<li>M</li>
+		<li>E</li>
+	</ul>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly').removeClass('hidden');
+                }, 500);
+                
+            })();
+            
+        </script>
+
+</body>
+</html>
